@@ -1,0 +1,90 @@
+body{
+    background-color: lightblue;
+    
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    position: relative;
+}
+.heading span{
+    position: relative;
+    font-weight: 50rem;
+    
+    font-size: 2em;
+    color: black;
+    display: inline-block;
+    animation: flowingWord 3s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    animation-play-state: running;
+}
+@keyframes flowingWord{
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-25px);
+    }
+}
+
+.image{
+    height: 70px;
+    width: 70px;
+    margin-top: 5px;
+    animation: flowingImage 5s ease-in infinite; 
+    animation-play-state: running;
+}
+@keyframes flowingImage{
+    0%, 50%, 100%{
+        transform: translateX(800px);
+    }
+    50%{
+        transform: translateX(-40px);
+    }
+}
+.container{
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: 5rem;
+}
+.display{
+    text-align: center;
+    font-size: 15rem;
+    font-family: verdana;
+}
+.buttons{
+    margin-left: 32rem;
+    box-sizing: 20rem;  
+}
+#start{
+    background-color: whitesmoke;
+    size: 100rem;
+    color:black;
+    border-radius: 50%;
+    font-size: 3rem;
+   
+    padding: 10px;
+
+}
+#start:hover{
+    background-color: cornflowerblue;
+    color: black;
+}
+#reset{
+    background-color: whitesmoke;
+    size: 100rem;
+    color:black;
+    border-radius: 50%;
+    font-size: 3rem;
+   
+    padding: 10px;
+}
+#reset:hover{
+    background-color: cornflowerblue;
+    color: black;
+}
